@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 
 import com.shashank.sony.fancytoastlib.FancyToast;
 
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 "Zambia", "Zimbabwe", "Palestine"};
 
         ListAdapter listAdapter = new ArrayAdapter<String>(this, R.layout.list_item,countries);
+        //SimpleCursorAdapter --> this user data fetch
         listView = findViewById(R.id.list_view);
         listView.setAdapter(listAdapter);
 
